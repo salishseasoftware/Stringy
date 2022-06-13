@@ -1,8 +1,18 @@
 [![Build & Test](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml/badge.svg)](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml)
+[![Latest Release](https://img.shields.io/github/release/salishseasoftware/Stringy/all.svg)](https://github.com/salishseasoftware/Stringy/releases)
+[![Swift 5.5+](https://img.shields.io/badge/Swift-5.5+-orange.svg)](https://developer.apple.com/swift)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
+[![License](https://img.shields.io/github/license/salishseasoftware/Stringy)](LICENSE)
 
 # Stringy
 
 Handy string conversions
+
+## Requirements
+
+- Swift 5.5+
+- Xcode 13.0+
+- macOS 11.0+
 
 ## Command Line Tool
 
