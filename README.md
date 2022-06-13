@@ -1,3 +1,5 @@
+[![Build & Test](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml/badge.svg)](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml)
+
 # Stringy
 
 Handy string conversions
