@@ -52,7 +52,7 @@ public extension String {
 
     /// True if a string is a valid email address, according to apple's data detectors anyway.
     ///
-    /// Friends don't let friends use regex to validate email addresses
+    /// Friends don't let friends use regex to validate email addresses.
     ///
     /// * https://stackoverflow.com/questions/48055431/can-it-cause-harm-to-validate-email-addresses-with-a-regex
     /// * https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression

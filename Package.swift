@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/apple/swift-argument-parser",
-            from: "0.3.0"),
+            from: "1.0.0"),
     ],
     targets: [
         .target(
@@ -24,7 +24,7 @@ let package = Package(
         .testTarget(
             name: "LibStringyTests",
             dependencies: ["LibStringy"]),
-        .target(
+        .executableTarget(
             name: "stringy",
             dependencies: [
                 "LibStringy",

@@ -16,8 +16,9 @@ public extension StringProtocol {
         prefix(1).capitalized + dropFirst()
     }
 
-    /// Transforms a string into a camelCased string
-    /// E.G. "Camel Case String" -> "camelCaseString"
+    /// Transforms a string into a camelCased string.
+    ///
+    /// E.G. "Camel Case String" -> "camelCaseString".
     func camelcased() -> String {
         components(separatedBy: .whitespaces)
             .map({ $0.capitalized })
@@ -25,8 +26,9 @@ public extension StringProtocol {
             .firstLowercased()
     }
 
-    /// Transforms a camelCaseString into one with a single space between the words
-    /// E.G. "camelCaseString" -> "camel case string"
+    /// Transforms a camelCaseString into one with a single space between the words.
+    ///
+    /// E.G. "camelCaseString" -> "camel case string".
     func uncamelcased() -> String {
         return unicodeScalars.reduce("") {
             if CharacterSet.uppercaseLetters.contains($1) {
@@ -39,31 +41,35 @@ public extension StringProtocol {
         .lowercased()
     }
 
-    /// Returns a string that replaces occurences of white space characters with an underscore
-    /// E.G. "Snakes are slithery" -> "snakes_are_slithery"
+    /// Returns a string that replaces occurrences of white space characters with an underscore.
+    ///
+    /// E.G. "Snakes are slithery" -> "snakes_are_slithery".
     func snakecased() -> String {
         components(separatedBy: .whitespaces)
             .joined(separator: "_")
             .lowercased()
     }
 
-    /// Returns a string that replaces occurences of underscore characters with a space
-    /// E.G. "snakes_are_slithery" -> "snakes are slithery"
+    /// Returns a string that replaces occurrences of underscore characters with a space.
+    ///
+    /// E.G. "snakes_are_slithery" -> "snakes are slithery".
     func unsnakecased() -> String {
         split(separator: "_")
             .joined(separator: " ")
     }
 
-    /// Returns a string that replaces occurences of white space characters with a hyphen
-    /// E.G. "Words on a stick" -> "words-on-a-stick"
+    /// Returns a string that replaces occurrences of white space characters with a hyphen.
+    ///
+    /// E.G. "Words on a stick" -> "words-on-a-stick".
     func kebabcased() -> String {
         components(separatedBy: .whitespaces)
             .joined(separator: "-")
             .lowercased()
     }
 
-    /// Returns a string that replaces occurences of "-" characters with a space
-    /// E.G. "words-on-a-stick" -> "words on a stick"
+    /// Returns a string that replaces occurrences of "-" characters with a space.
+    ///
+    /// E.G. "words-on-a-stick" -> "words on a stick".
     func unkebabcased() -> String {
         split(separator: "-")
             .joined(separator: " ")

@@ -1,3 +1,5 @@
+[![Build & Test](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml/badge.svg)](https://github.com/salishseasoftware/Stringy/actions/workflows/build+test.yml)
+
 # Stringy
 
 Handy string conversions
@@ -60,7 +62,7 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-#### snakecase
+#### kebabcase
 
 ```
 OVERVIEW: Converts strings to kebab-case.
@@ -116,12 +118,37 @@ In Xcode:
 1. Product > Archive
 1. Distribute Content
 1. Built Products
-1. copy `stringy` executable to `/usr/local/bin/` or wherever you prefer.
+1. copy the `stringy` executable to `/usr/local/bin/`, or wherever you prefer.
 
 
 ## LibStringy
 
-Swift package of handy String extensions.
+A package of handy `String` and `StringProtocol` extensions.
 
+### String
 
+Some general utility String extensions.
 
+### String+DataDetector
+
+Makes use of `NSDataDetector` to parse known data types from a string.
+
+### String+Error
+
+Extends String to conform to the `Error` protocol.
+
+This allows throwing a simple string. E.G. `throw "Foo"`.
+
+### StringProtocol
+
+Some general utility StringProtocol extensions.
+
+### StringProtocol+Stringy
+
+Some handy conversions.
+
+For example:
+
+- `camelcased()`
+- `snakecased()` 
+- `kebabcased()`
