@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -24,7 +24,7 @@ let package = Package(
         .testTarget(
             name: "LibStringyTests",
             dependencies: ["LibStringy"]),
-        .target(
+        .executableTarget(
             name: "stringy",
             dependencies: [
                 "LibStringy",
