@@ -60,7 +60,7 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-#### snakecase
+#### kebabcase
 
 ```
 OVERVIEW: Converts strings to kebab-case.
@@ -116,12 +116,10 @@ In Xcode:
 1. Product > Archive
 1. Distribute Content
 1. Built Products
-1. copy `stringy` executable to `/usr/local/bin/` or wherever you prefer.
+1. copy the `stringy` executable to `/usr/local/bin/`, or wherever you prefer.
 
 
 ## LibStringy
 
 Swift package of handy String extensions.
-
-
 
